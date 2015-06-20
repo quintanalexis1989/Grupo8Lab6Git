@@ -123,7 +123,7 @@ IDictionary* EstudianteController::getCarreras()
 IDictionary* EstudianteController::getEstudiantes()
 {
     ManejadorEstudiante* me = ManejadorEstudiante::getInstance();
-    IDictionary students = me->getEstudiantes();
+    IDictionary* students = me->getEstudiantes();
     return students;
 }
 
